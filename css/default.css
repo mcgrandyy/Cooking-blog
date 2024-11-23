@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Kranky&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kalnia:wght@100..700&family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kalnia:wght@100..700&family=Kranky&display=swap');
 
 html {
     height: 100%;
@@ -16,9 +17,17 @@ body {
     margin: 0;
 }
 
+#header {
+    width: 100%;
+}
+
+#footer {
+    width: 100%;
+}
+
 #middle {
     width: 70%;
-    min-width: 620px;;
+    min-width: 900px;
 }
 
 h1, h2, h3, h4, h5 {
