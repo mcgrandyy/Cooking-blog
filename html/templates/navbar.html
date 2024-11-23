@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<body>
+
+<nav>
+    <div class="navbar">
+        <div class="left">
+            <img class="icon" alt="piwi" src="../../assets/piwi.svg">
+            <div class="title" style="max-width: 160px; font-size: 30px">Sandy's Food Blog</div>
+        </div>
+        <div class="right">
+            <div class="pages">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">RECIPES</a>
+                <div>[]</div>  <!-- placeholder for search button icon-->
+            </div>
+        </div>
+    </div>
+
+
+</nav>
+</body>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    /************* body *************/
+    body {
+        margin: 0;
+        background-color: black;
+        font-family: 'Kalnia', serif;
+    }
+
+    /************* navbar *************/
+    .navbar {
+        background-color: white;
+
+        margin: 0;
+        padding-top: 7px;
+        padding-bottom: 7px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        justify-content: space-between;
+
+        /* font stuff */
+        font-weight: 600;
+    }
+
+    /************* left side of navbar *************/
+    .left {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* piwi icon */
+    .icon {
+        width: 95px;
+        height: 85px;
+    }
+
+    /************* right side of navbar *************/
+    .right {
+        display: flex;
+        float: right;
+    }
+
+    /************* stuff inside right side *************/
+    .right .pages {
+        display: flex;
+        gap: 50px;
+        font-size: 35px;
+        color: black;
+    }
+
+    .right .pages a {
+        color: black;
+        text-decoration: none;
+    }
+
+</style>
+</html>
