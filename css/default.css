@@ -17,11 +17,3 @@ body {
     width: 70%;
     min-width: 620px;;
 }
-
-.announcement {
-    background-color: #FFF4EE;
-    padding: 5px;
-    text-align: center;
-    font-size: 24px;
-    border-radius: 10px;
-}
