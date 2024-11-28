@@ -42,11 +42,13 @@ li {
 
 .favourites > img {
     object-fit: cover;
-    width: max-content;
+    width: 18vw;
     height: 90%;
     min-width: 255px;
     min-height: 270px;
     border-radius: 15px;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
 
 button {
@@ -56,9 +58,7 @@ button {
     letter-spacing: 2px;
     border: none;
     margin-top: 20px;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px 15px;
     transition: all 0.5s ease-in;
 }
 

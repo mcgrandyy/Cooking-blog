@@ -5,6 +5,8 @@
 html {
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 
 #middle {
     width: 70%;
-    min-width: 900px;
+    min-width: 1000px;
 }
 
 h1, h2, h3, h4, h5 {
