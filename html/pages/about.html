@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../../css/default.css">
 </head>
 <body>
+<div id="header">
+    <div id="navbar">
+
+    </div>
+</div>
 <div class="middle">
     <div class="profile">
         <img src="../../assets/piwi.png" alt="Sandy Ng" class="profile-pic">
@@ -20,5 +25,15 @@
         </p>
     </div>
 </div>
+<div id="footer">
+    footer
+</div>
+<script>
+  fetch('../templates/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
 </body>
 </html>

@@ -1,49 +1,12 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: 2px solid #e5e5e5;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
 .icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
 
-.nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-}
-
 .search-icon {
     width: 20px;
     height: 20px;
-}
-
-.main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 20px;
-    background-image: url('../assets/lemon.png');
-    background-size: 150px;
-    background-repeat: repeat;
 }
 
 .profile {
