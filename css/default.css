@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    font-family: 'Inria Serif', serif;
     height: 100%;
     width: 100%;
     display: flex;
@@ -38,6 +39,5 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    font-family: 'Inria Serif', serif;
     margin: 0;
 }

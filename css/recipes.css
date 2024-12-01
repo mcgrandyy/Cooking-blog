@@ -1,50 +1,55 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
 .container {
-    display: flex;
-    padding: 20px;
-    background-color: #fff;
-    max-width: 1000px;
+    width: 80%;
     margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 20px;
 }
-
-.text-section {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.image-box {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-image: url('https://via.placeholder.com/200');
-    background-size: cover;
-    background-position: center;
-    border: 4px solid #ddd;
-}
-
-.reviews-section {
-    margin-top: 20px;
-}
-
-.review {
+.recipe-section {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
+.recipe-image {
+    width: 45%;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.recipe-text {
+    width: 45%;
+}
+.recipe-text p {
+    margin: 0 0 10px;
+}
+.jump-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.reviews-section {
+    border-top: 1px solid #000;
+    padding-top: 20px;
+}
+.reviews-section h2 {
+    margin: 0 0 20px;
+}
+.review-card {
+    display: inline-block;
+    width: 22%;
+    margin-right: 2%;
+    text-align: center;
+}
+.review-card:last-child {
+    margin-right: 0;
+}
 .stars {
-    color: #ffd700;
-    margin-right: 10px;
-}
-
-.star {
+    color: #000;
     font-size: 20px;
+}
+.review-text {
+    margin: 10px 0 0;
 }
