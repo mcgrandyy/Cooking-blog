@@ -6,6 +6,7 @@
     <title>Sandy's Food Blog</title>
     <link rel="stylesheet" href="../../css/about.css">
     <link rel="stylesheet" href="../../css/default.css">
+    <script src="../../js/navbar.js" defer></script>
 </head>
 <body>
 <div id="header">
@@ -28,12 +29,5 @@
 <div id="footer">
     footer
 </div>
-<script>
-  fetch('../templates/navbar.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('navbar').innerHTML = data;
-    });
-</script>
 </body>
 </html>
