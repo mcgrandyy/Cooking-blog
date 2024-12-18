@@ -9,9 +9,7 @@
 </head>
 <body>
 <div id="header">
-    <div id="navbar">
-
-    </div>
+    <div id="navbar"></div>
 </div>
 <div class="middle">
     <div class="profile">
@@ -25,15 +23,19 @@
         </p>
     </div>
 </div>
-<div id="footer">
-    footer
-</div>
+<div id="footer"></div>
 <script>
   fetch('../templates/navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbar').innerHTML = data;
     });
+
+  fetch('../templates/footer.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer').innerHTML = data;
+      });
 </script>
 </body>
 </html>

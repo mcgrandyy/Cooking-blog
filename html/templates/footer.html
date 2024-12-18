@@ -1,0 +1,121 @@
+<footer>
+    <div class="footer_bar">
+        <div class="left">
+            <img class="footer-icon" alt="piwi" src="../../assets/piwi.svg">
+        </div>
+        <!-- right side -->
+        <div class="footer-container">
+            <!-- social media -->
+            <div class="container-container">
+                <p class="footer-header">Let's get in touch!</p>
+                <div class="icon-container">
+                    <!-- gyatthub -->
+                    <a href="https://github.com/mcgrandyy/Cooking-blog" class="icon-button">
+                        <img class="icon-image" alt="github-icon" src="../../assets/github-mark.svg">
+                    </a>
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com/sandee__2/" class="icon-button">
+                        <img class="icon-image" alt="github-icon" src="../../assets/instagram.svg">
+                    </a>
+                </div>
+            </div>
+            <!-- contact us -->
+            <div class="container-container">
+                <div class="contact-us-container">
+                    <p class="footer-header">Contacts</p>
+                    <div style="font-size: 20px; font-family: 'Times New Roman'; padding-bottom: 7px">
+                        132-sng@sd43.bc.ca
+                    </div>
+                    <div style="font-size: 20px; font-family: 'Times New Roman'">
+                        (123)-456-7890
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-thing">
+        Copyright @ 2024 Sandy's Capstone; All Rights Reserved.
+    </div>
+</footer>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    /************* footer_bar *************/
+    body {
+        margin: 0;
+    }
+
+    .footer_bar {
+        background-color: #FFF4EE;
+        font-family: 'Kalnia', serif;
+        font-weight: 600;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* piwi icon */
+    .footer-icon {
+        position: relative;
+        left: -85px;
+        bottom: 0;
+    }
+
+    .container-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* section stuff: contact me | social media */
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        gap: 100px
+    }
+
+    /* the headers of the columns*/
+    .footer-header {
+        text-align: center;
+        font-size: 25px;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 15px;
+
+    }
+
+    /* sosho media icons: gyatthub | instagram */
+    .icon-container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    /* the white part */
+    .icon-button {
+
+        padding: 10px;
+        border-radius: 20px;
+        height: 60px;
+    }
+
+    /* the actual image */
+    .icon-image {
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+    }
+
+    .copyright-thing {
+        margin: 0;
+        background-color: black;
+        height: 40px;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+    }
+
+</style>
