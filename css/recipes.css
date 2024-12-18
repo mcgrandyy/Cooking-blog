@@ -1,0 +1,55 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.recipe-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.recipe-image {
+    width: 45%;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.recipe-text {
+    width: 45%;
+}
+.recipe-text p {
+    margin: 0 0 10px;
+}
+.jump-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.reviews-section {
+    border-top: 1px solid #000;
+    padding-top: 20px;
+}
+.reviews-section h2 {
+    margin: 0 0 20px;
+}
+.review-card {
+    display: inline-block;
+    width: 22%;
+    margin-right: 2%;
+    text-align: center;
+}
+.review-card:last-child {
+    margin-right: 0;
+}
+.stars {
+    color: #000;
+    font-size: 20px;
+}
+.review-text {
+    margin: 10px 0 0;
+}

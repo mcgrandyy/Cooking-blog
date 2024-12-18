@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    font-family: 'Inria Serif', serif;
     height: 100%;
     width: 100%;
     display: flex;
@@ -17,6 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    gap: 30px
 }
 
 #header {
@@ -30,6 +32,7 @@ body {
 #middle {
     width: 70%;
     min-width: 1000px;
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -37,6 +40,5 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    font-family: 'Inria Serif', serif;
     margin: 0;
 }

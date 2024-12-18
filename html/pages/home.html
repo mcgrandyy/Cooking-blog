@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../../css/home.css">
     <link rel="stylesheet" href="../../css/default.css">
     <script src="../../js/navbar.js" defer></script>
+    <script src="../../js/carousel.js"></script>
     <title>Home</title>
-
 </head>
 <body>
     <div id="header">
@@ -15,35 +15,69 @@
     </div>
     <div id="middle">
         <div class="announcement"><p>Try some of my favourite dishes!</p></div>
-        <ul>
-            <li class="favourites">
-                <img src="../../assets/foodpic1.webp" alt="Picture of food 1">
-                <div style="text-align: center; width: auto; min-width: 360px">
-                    <h1 style="font-weight: 500; font-size: 55px;">BIG BALLS</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <button>Try it out!</button>
-                </div>
-                <img src="../../assets/foodpic2.webp" alt="Picture of food 2">
-            </li>
-        </ul>
+        <div class="carousel">
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="favourites carousel-card">
+                        <img src="../../assets/foodpic1.webp" alt="Picture of food 1">
+                        <div style="text-align: center; width: auto; min-width: 360px">
+                            <h1 style="font-weight: 500; font-size: 55px;">BIG BALLS</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <button>Try it out!</button>
+                        </div>
+                        <img src="../../assets/foodpic2.webp" alt="Picture of food 2">
+                    </li>
+                    <li class="favourites carousel-card">
+                        <img src="../../assets/foodpic1.webp" alt="Picture of food 1">
+                        <div style="text-align: center; width: auto; min-width: 360px">
+                            <h1 style="font-weight: 500; font-size: 55px;">BIG BALLS 2</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <button>Try it out!</button>
+                        </div>
+                        <img src="../../assets/foodpic2.webp" alt="Picture of food 2">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-buttons">
+            <button class="carousel-controls" onclick="prevCard()">previous</button>
+            <button class="carousel-controls" onclick="nextCard()">next</button>
+        </div>
+        <div class="big-black-category-balls">
+            <a href="#" class="big-black-button">Noodles</a>
+            <a href="#" class="big-black-button">Vegetarian</a>
+            <a href="#" class="big-black-button">Healthy</a>
+            <a href="#" class="big-black-button">Drinks</a>
+            <a href="#" class="big-black-button">Snacks</a>
+        </div>
+        <div class="about">
+            <div class="about-text">
+                <h1>Sandy</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div>
+                <img src="../../assets/therealsandy.png" alt="this is sandy"/>
+            </div>
+        </div>
     </div>
-    <div class="big-black-category-balls">
-        <a href="#" class="big-black-button">Noodles</a>
-        <a href="#" class="big-black-button">Vegetarian</a>
-        <a href="#" class="big-black-button">Healthy</a>
-        <a href="#" class="big-black-button">Drinks</a>
-        <a href="#" class="big-black-button">Snacks</a>
-    </div>
-
     <div id="footer">
         footer
     </div>
-
 </body>
-
 </html>
