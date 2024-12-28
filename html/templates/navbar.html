@@ -13,7 +13,6 @@
                 <a href="../pages/home.html">HOME</a>
                 <a href="../pages/about.html">ABOUT</a>
                 <a href="../pages/recipes.html">RECIPES</a>
-                <a><img src="/assets/search.svg" alt="search icon"></a>  <!-- placeholder for search button icon-->
             </div>
         </div>
     </div>
@@ -25,6 +24,11 @@
 
     /************* navbar *************/
     .navbar {
+
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+
         font-family: 'Kalnia', serif;
         background-color: white;
 
@@ -63,6 +67,7 @@
     .right {
         display: flex;
         float: right;
+        padding-right: 50px;
     }
 
     /************* stuff inside right side *************/
