@@ -30,9 +30,8 @@ body {
 }
 
 #middle {
-    width: 70%;
-    min-width: 1000px;
-    align-items: center;
+    margin-top: 80px;
+
 }
 
 h1, h2, h3, h4, h5 {
