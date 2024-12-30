@@ -6,6 +6,7 @@
     <script src="../../js/navbar.js" defer></script>
     <script src="../../js/footer.js" defer></script>
     <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/recipe.css">
     <title>Rose Tteokbokki</title>
 </head>
 <body>
@@ -14,12 +15,13 @@
 </div>
 <div id="middle">
     <canvas style="border-radius: 15px; filter: drop-shadow(0px 7px 3px #9f9f9f54);" id="pdf-canvas"></canvas>
+    <a href="../../recipes/rosetteokbokki.pdf" download="rosetteokbokki.pdf">Download PDF</a>
 </div>
 <div id="footer"></div>
 <script type="module" defer>
     import { getDocument, GlobalWorkerOptions } from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.min.mjs";
     // The URL of the PDF to load
-    const pdfUrl = './../../../recipes/rosetteokbokki.pdf';
+    const pdfUrl = '../../recipes/rosetteokbokki.pdf';
 
     GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.worker.min.mjs';
 

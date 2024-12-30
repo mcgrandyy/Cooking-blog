@@ -1,0 +1,21 @@
+#middle a {
+    background-color: black;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    letter-spacing: 2px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 15px;
+    transition: all 0.5s ease-in;
+}
+#middle a:hover {
+    cursor: pointer;
+    background-color: #FFF4EE;
+    color: black;
+}
+
+#middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

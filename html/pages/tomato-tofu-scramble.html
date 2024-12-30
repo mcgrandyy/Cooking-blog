@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../js/navbar.js" defer></script>
+    <script src="../../js/footer.js" defer></script>
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/recipe.css">
+    <title>Tomato Tofu Scramble</title>
+</head>
+<body>
+<div id="header">
+    <div id="navbar"></div>
+</div>
+<div id="middle">
+    <canvas style="border-radius: 15px; filter: drop-shadow(0px 7px 3px #9f9f9f54);" id="pdf-canvas"></canvas>
+    <a href="../../recipes/tomatotofuscramble.pdf" download="tomatotofuscramble.pdf">Download PDF</a>
+</div>
+<div id="footer"></div>
+<script type="module" defer>
+    import { getDocument, GlobalWorkerOptions } from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.min.mjs";
+    // The URL of the PDF to load
+    const pdfUrl = '../../recipes/tomatotofuscramble.pdf';
+
+    GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.worker.min.mjs';
+
+    // Asynchronously download the PDF
+    getDocument(pdfUrl).promise.then(function(pdf) {
+        const pdfDoc = pdf;
+        const canvas = document.getElementById('pdf-canvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.imageSmoothingEnabled = true;
+
+        // Get the first page of the PDF
+        pdfDoc.getPage(1).then(function(page) {
+            const viewport = page.getViewport({ scale: 1.75 });
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+
+            // Render the page into the canvas context
+            page.render({
+                canvasContext: ctx,
+                viewport: viewport
+            });
+        });
+    }).catch(function(error) {
+        console.error('Error loading PDF:', error);
+    });
+</script>
+</body>
+</html>
