@@ -19,6 +19,8 @@ body {
     align-items: center;
     margin: 0;
     gap: 30px
+    padding-top: 50px;
+
 }
 
 #header {
@@ -30,7 +32,7 @@ body {
 }
 
 #middle {
-    margin-top: 10px;
+    margin-top: 80px;
 
 }
 
