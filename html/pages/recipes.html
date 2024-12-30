@@ -16,7 +16,7 @@
 <div id="middle">
     <h1>Looking for Something?</h1>
     <div class="search-container">
-        <input type="text" placeholder="Search for a Recipe">
+        <input type="text" id="search-input" placeholder="Search for a Recipe">
     </div>
     <div class="browse-message">or browse my recipes below</div>
     <div class="recipe-grid">
@@ -50,5 +50,21 @@
     </div>
 </div>
 <div id="footer"></div>
+<script>
+  document.getElementById('search-input').addEventListener('input', function() {
+    const searchValue = this.value.toLowerCase();
+    const recipeCards = document.querySelectorAll('.recipe-card');
+
+    recipeCards.forEach(card => {
+      const titleElement = card.querySelector('.title');
+      const title = titleElement ? titleElement.textContent.toLowerCase() : '';
+      if (title.includes(searchValue)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
 </body>
 </html>
