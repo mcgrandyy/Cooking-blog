@@ -24,17 +24,19 @@ body {
 }
 
 .recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .recipe-card {
     background: #fff;
     border: 1px solid #ccc;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -93,15 +95,6 @@ body {
 .browse-message {
     margin: 20px 0;
     font-size: 18px;
-}
-
-.recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .recipe-card {
