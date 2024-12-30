@@ -7,6 +7,7 @@
     margin-top: 20px;
     padding: 10px 15px;
     transition: all 0.5s ease-in;
+    margin-bottom: 20px;
 }
 #middle a:hover {
     cursor: pointer;
