@@ -50,8 +50,10 @@ body {
 }
 
 .recipe-card img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    min-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .recipe-card .content {
@@ -97,24 +99,8 @@ body {
     font-size: 18px;
 }
 
-.recipe-card {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: left;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
 .recipe-card:hover {
     transform: scale(1.05);
-}
-
-.recipe-card img {
-    width: 100%;
-    height: auto;
 }
 
 .recipe-card .content {
