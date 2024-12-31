@@ -12,8 +12,6 @@ function prevCard() {
     const cards = document.querySelectorAll('.carousel-card');
     if (currentIndex > 0) {
         currentIndex--;
-    } else {
-        currentIndex = cards.length - 1;
     }
     updateCarousel();
 }
@@ -22,8 +20,6 @@ function nextCard() {
     const cards = document.querySelectorAll('.carousel-card');
     if (currentIndex < cards.length - 1) {
         currentIndex++;
-    } else {
-        currentIndex = 0;
     }
     updateCarousel();
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes</title>
+    <link rel="stylesheet" href="../../css/recipes.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <script src="../../js/navbar.js" defer></script>
+    <script src="../../js/footer.js" defer></script>
+</head>
+<body>
+<div id="header">
+    <div id="navbar"></div>
+</div>
+<div id="middle">
+    <h1>Healthy</h1>
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <a href="beef-cabbage-wraps.html">
+                <img src="../../assets/recipes/cabbage_wraps.jpg" alt="Rad-ish Cumber Salad">
+                <div class="content">
+                    <div class="title">Beef Cabbage Wraps</div>
+                    <div class="description">Soft and tasty cabbage wraps</div>
+                </div>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="omlette.html">
+                <img src="../../assets/recipes/omelette.png" alt="Rad-ish Cumber Salad">
+                <div class="content">
+                    <div class="title">Omelette</div>
+                    <div class="description">An oil-free thick omelette</div>
+                </div>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="tomato-tofu-scramble.html">
+                <img src="../../assets/recipes/tomato-scramble.png" alt="Rad-ish Cumber Salad">
+                <div class="content">
+                    <div class="title">Tomato Tofu Scramble</div>
+                    <div class="description">Fresh, tender, and delicious tofu with a mix of tomato sauce</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<script>
+  document.getElementById('search-input').addEventListener('input', function() {
+    const searchValue = this.value.toLowerCase();
+    const recipeCards = document.querySelectorAll('.recipe-card');
+
+    recipeCards.forEach(card => {
+      const titleElement = card.querySelector('.title');
+      const title = titleElement ? titleElement.textContent.toLowerCase() : '';
+      if (title.includes(searchValue)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+</body>
+</html>

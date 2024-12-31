@@ -52,7 +52,9 @@ li {
     flex-grow: 1;
 }
 
-.carousel button {
+.carousel a {
+    display: inline-block;
+    text-decoration: none;
     background-color: black;
     color: white;
     font-family: 'Inria Sans', sans-serif;
@@ -63,7 +65,7 @@ li {
     transition: all 0.5s ease-in;
 }
 
-.carousel button:hover {
+.carousel a:hover {
     cursor: pointer;
     background-color: #FFF4EE;
     color: black;
